@@ -1,0 +1,158 @@
+[gd_scene format=3 uid="uid://cf233oycphua6"]
+
+[ext_resource type="Script" uid="uid://l2f4m4rnagcj" path="res://test/property_binding_test.gd" id="1_67hb1"]
+[ext_resource type="Script" uid="uid://xstwlscfyqhj" path="res://addons/property_binder/Basis/property_binder_group_node.gd" id="2_2g104"]
+[ext_resource type="Script" uid="uid://cit1vygc0syc" path="res://addons/property_binder/Basis/property_binder_node.gd" id="3_w0j6c"]
+[ext_resource type="Texture2D" uid="uid://cuyyy4xxwg6yl" path="res://icon.svg" id="4_aer43"]
+[ext_resource type="Script" uid="uid://dqf4f10xj4tcb" path="res://test/sprite_2d.gd" id="5_gatyh"]
+
+[node name="Control" type="Control" unique_id=1596121053 node_paths=PackedStringArray("check_1", "check_2", "line_edit_1", "line_edit_2", "property_binder_group_node")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_67hb1")
+check_1 = NodePath("VBoxContainer/HBoxContainer/VBoxContainer/check1")
+check_2 = NodePath("VBoxContainer/HBoxContainer/VBoxContainer/check2")
+line_edit_1 = NodePath("VBoxContainer/HBoxContainer/VBoxContainer2/LineEdit1")
+line_edit_2 = NodePath("VBoxContainer/HBoxContainer/VBoxContainer2/LineEdit2")
+property_binder_group_node = NodePath("VBoxContainer/HBoxContainer3/PropertyBinderGroupNode")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1342259359]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=783155969]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=1167726728]
+layout_mode = 2
+
+[node name="check1" type="CheckBox" parent="VBoxContainer/HBoxContainer/VBoxContainer" unique_id=780274138]
+layout_mode = 2
+text = "Test 1"
+
+[node name="check2" type="CheckBox" parent="VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1105964864]
+layout_mode = 2
+text = "Test 1"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=1594119758]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="LineEdit1" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=283084639]
+layout_mode = 2
+
+[node name="LineEdit2" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1726087301]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer" unique_id=1469104664]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer3" unique_id=1758339048]
+layout_mode = 2
+
+[node name="check1" type="CheckBox" parent="VBoxContainer/HBoxContainer3/VBoxContainer" unique_id=1670966891]
+layout_mode = 2
+text = "Test 1"
+
+[node name="check2" type="CheckBox" parent="VBoxContainer/HBoxContainer3/VBoxContainer" unique_id=576756247]
+layout_mode = 2
+text = "Test 2"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer3" unique_id=429192198]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="LineEdit1" type="LineEdit" parent="VBoxContainer/HBoxContainer3/VBoxContainer2" unique_id=782593374]
+layout_mode = 2
+
+[node name="LineEdit2" type="LineEdit" parent="VBoxContainer/HBoxContainer3/VBoxContainer2" unique_id=2065191340]
+layout_mode = 2
+
+[node name="PropertyBinderGroupNode" type="Node" parent="VBoxContainer/HBoxContainer3" unique_id=2040415407]
+script = ExtResource("2_2g104")
+metadata/_custom_type_script = "uid://xstwlscfyqhj"
+
+[node name="PropertyBinderNode" type="Node" parent="VBoxContainer/HBoxContainer3/PropertyBinderGroupNode" unique_id=2096946381 node_paths=PackedStringArray("control")]
+script = ExtResource("3_w0j6c")
+control = NodePath("../../VBoxContainer/check1")
+object_property_name = "check"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="PropertyBinderNode2" type="Node" parent="VBoxContainer/HBoxContainer3/PropertyBinderGroupNode" unique_id=1325402522 node_paths=PackedStringArray("control")]
+script = ExtResource("3_w0j6c")
+control = NodePath("../../VBoxContainer/check2")
+object_property_name = "check"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="PropertyBinderNode3" type="Node" parent="VBoxContainer/HBoxContainer3/PropertyBinderGroupNode" unique_id=1626234183 node_paths=PackedStringArray("control")]
+script = ExtResource("3_w0j6c")
+control = NodePath("../../VBoxContainer2/LineEdit1")
+object_property_name = "text"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="PropertyBinderNode4" type="Node" parent="VBoxContainer/HBoxContainer3/PropertyBinderGroupNode" unique_id=134020050 node_paths=PackedStringArray("control")]
+script = ExtResource("3_w0j6c")
+control = NodePath("../../VBoxContainer2/LineEdit2")
+object_property_name = "text"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="direct" type="HBoxContainer" parent="VBoxContainer" unique_id=401862697]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/direct" unique_id=190832952]
+layout_mode = 2
+
+[node name="check1" type="CheckBox" parent="VBoxContainer/direct/VBoxContainer" unique_id=1810916015]
+layout_mode = 2
+text = "Test 1"
+
+[node name="check2" type="CheckBox" parent="VBoxContainer/direct/VBoxContainer" unique_id=1885095699]
+layout_mode = 2
+text = "Test 2"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/direct" unique_id=805806021]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/direct/VBoxContainer2" unique_id=1705302259]
+layout_mode = 2
+max_value = 2000.0
+
+[node name="PropertyBinderGroupNode" type="Node" parent="VBoxContainer/direct" unique_id=17375134 node_paths=PackedStringArray("target")]
+script = ExtResource("2_2g104")
+target = NodePath("../../../Sprite2D")
+metadata/_custom_type_script = "uid://xstwlscfyqhj"
+
+[node name="PropertyBinderNode" type="Node" parent="VBoxContainer/direct/PropertyBinderGroupNode" unique_id=2119941998 node_paths=PackedStringArray("control")]
+script = ExtResource("3_w0j6c")
+control = NodePath("../../VBoxContainer2/SpinBox")
+object_property_name = "posx"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=1421186247]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=838864255]
+layout_mode = 2
+text = "TestData1"
+
+[node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=1090875767]
+layout_mode = 2
+text = "TestData2"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=949571145]
+position = Vector2(83.825, 390)
+texture = ExtResource("4_aer43")
+script = ExtResource("5_gatyh")
+
+[node name="Label" type="Label" parent="Sprite2D" unique_id=1133936911]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/Button2" to="." method="_on_button_2_pressed"]

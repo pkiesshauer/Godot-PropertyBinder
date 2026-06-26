@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="MappingLibrary" format=3 uid="uid://dvqxu75jbtqss"]
+
+[ext_resource type="Script" uid="uid://dop8bj8wnxr6q" path="res://addons/property_binder/Basis/Mapping/property_map.gd" id="1_6og10"]
+[ext_resource type="Script" uid="uid://dpwfmceccpwv6" path="res://addons/property_binder/Basis/Mapping/mapping_library.gd" id="2_8rqsq"]
+[ext_resource type="Script" uid="uid://cmkaar7ithfmc" path="res://addons/property_binder/Basis/Mapping/control_map.gd" id="2_fcws4"]
+
+[sub_resource type="Resource" id="Resource_tru04"]
+script = ExtResource("2_fcws4")
+control_type = "CheckBox"
+control_property = "button_pressed"
+control_signal = "toggled"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_6og10"]
+script = ExtResource("1_6og10")
+property_type = 1
+control_map = Array[ExtResource("2_fcws4")]([SubResource("Resource_tru04")])
+metadata/_custom_type_script = "uid://dop8bj8wnxr6q"
+
+[sub_resource type="Resource" id="Resource_m2tlt"]
+script = ExtResource("2_fcws4")
+control_type = "SpinBox"
+control_property = "value"
+control_signal = "value_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_8rqsq"]
+script = ExtResource("1_6og10")
+property_type = 2
+control_map = Array[ExtResource("2_fcws4")]([SubResource("Resource_m2tlt")])
+metadata/_custom_type_script = "uid://dop8bj8wnxr6q"
+
+[sub_resource type="Resource" id="Resource_fcws4"]
+script = ExtResource("1_6og10")
+property_type = 3
+metadata/_custom_type_script = "uid://dop8bj8wnxr6q"
+
+[sub_resource type="Resource" id="Resource_a5uex"]
+script = ExtResource("2_fcws4")
+control_type = "LineEdit"
+control_property = "text"
+control_signal = "text_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_nl4sr"]
+script = ExtResource("1_6og10")
+property_type = 4
+control_map = Array[ExtResource("2_fcws4")]([SubResource("Resource_a5uex")])
+metadata/_custom_type_script = "uid://dop8bj8wnxr6q"
+
+[resource]
+script = ExtResource("2_8rqsq")
+map = Array[ExtResource("1_6og10")]([SubResource("Resource_6og10"), SubResource("Resource_8rqsq"), SubResource("Resource_fcws4"), SubResource("Resource_nl4sr")])
+metadata/_custom_type_script = "uid://dpwfmceccpwv6"
