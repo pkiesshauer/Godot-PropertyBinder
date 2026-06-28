@@ -11,7 +11,6 @@ There are examples for every configuration in the examples folder, please check 
 ## PropertyBinder
 For binding a single property, you can use an individual PropertyBinder.
 1) Create a new PropertyBinder. Pass the Control and the name of the object property to bind.
-Next, assign the object to bind to.
 2) Assign the object by calling assign_obj(). The property is now bound to the control.
 
 ## PropertyBinderGroup
