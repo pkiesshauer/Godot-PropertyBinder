@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="MappingLibrary" format=3 uid="uid://dvqxu75jbtqss"]
 
-[ext_resource type="Script" uid="uid://dop8bj8wnxr6q" path="res://addons/property_binder/Basis/Mapping/property_map.gd" id="1_6og10"]
-[ext_resource type="Script" uid="uid://dpwfmceccpwv6" path="res://addons/property_binder/Basis/Mapping/mapping_library.gd" id="2_8rqsq"]
-[ext_resource type="Script" uid="uid://cmkaar7ithfmc" path="res://addons/property_binder/Basis/Mapping/control_map.gd" id="2_fcws4"]
+[ext_resource type="Script" uid="uid://dop8bj8wnxr6q" path="res://addons/property_binder/Mapping/property_map.gd" id="1_6og10"]
+[ext_resource type="Script" uid="uid://dpwfmceccpwv6" path="res://addons/property_binder/Mapping/mapping_library.gd" id="2_8rqsq"]
+[ext_resource type="Script" uid="uid://cmkaar7ithfmc" path="res://addons/property_binder/Mapping/control_map.gd" id="2_fcws4"]
 
 [sub_resource type="Resource" id="Resource_tru04"]
 script = ExtResource("2_fcws4")

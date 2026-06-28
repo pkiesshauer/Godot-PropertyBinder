@@ -15,9 +15,9 @@ func assign_obj(obj: Object):
 
 func _ready() -> void:
 	_obj = target
-	setup_binder.call_deferred()
+	_setup_binder.call_deferred()
 
-func setup_binder():
+func _setup_binder():
 	if not run_in_editor and Engine.is_editor_hint(): return
 	_pbg = PropertyBinderGroup.new(_obj)
 	for c in get_children():

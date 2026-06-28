@@ -9,7 +9,7 @@ class_name PropertyBinder
 
 signal dirty_changed(dirty: bool)
 
-const map: MappingLibrary = preload("res://addons/property_binder/Basis/Mapping/Map.tres")
+const map: MappingLibrary = preload("res://addons/property_binder/Mapping/Map.tres")
 
 var _obj_ref: WeakRef
 var _ctrl_ref: WeakRef
