@@ -11,7 +11,6 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if position.x > 1000: vel = -speed
-	if position.x < 100: vel = speed
+	if position.x < 500: vel = speed
 	position.x += vel * delta
 	posx = global_position.x
-	notify_property_list_changed()

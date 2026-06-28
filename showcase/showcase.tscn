@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://bycphil7mhy1o"]
+
+[node name="Control" type="Control" unique_id=1832948469]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Boolean" type="Control" parent="." unique_id=1405685900]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CheckBox" type="CheckBox" parent="Boolean" unique_id=249043607]
+layout_mode = 0
+offset_right = 24.0
+offset_bottom = 24.0
+
+[node name="CheckButton" type="CheckButton" parent="Boolean" unique_id=1274663837]
+layout_mode = 0
+offset_right = 44.0
+offset_bottom = 24.0
+
+[node name="Integer" type="Control" parent="." unique_id=1239376159]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SpinBox" type="SpinBox" parent="Integer" unique_id=97850836]
+layout_mode = 0
+offset_right = 86.5
+offset_bottom = 31.0
+
+[node name="ProgressBar" type="ProgressBar" parent="Integer" unique_id=2073442260]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 27.0
+
+[node name="LineEdit" type="LineEdit" parent="Integer" unique_id=1690489483]
+layout_mode = 0
+offset_right = 68.5
+offset_bottom = 31.0
+
+[node name="Float" type="Control" parent="." unique_id=1943215309]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SpinBox" type="SpinBox" parent="Float" unique_id=468854546]
+layout_mode = 0
+offset_right = 86.5
+offset_bottom = 31.0
+
+[node name="Label" type="Label" parent="Float" unique_id=32976758]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="LineEdit" type="LineEdit" parent="Float" unique_id=1752911679]
+layout_mode = 0
+offset_right = 68.5
+offset_bottom = 31.0
+
+[node name="String" type="Control" parent="." unique_id=1292249190]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LineEdit" type="LineEdit" parent="String" unique_id=1561429187]
+layout_mode = 0
+offset_right = 68.5
+offset_bottom = 31.0
+
+[node name="Label" type="Label" parent="String" unique_id=2045858945]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="String" unique_id=2012811484]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextEdit" type="TextEdit" parent="String" unique_id=1197553382]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button" type="Button" parent="String" unique_id=1565971027]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Color" type="Control" parent="." unique_id=1955157527]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Color" unique_id=620560129]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

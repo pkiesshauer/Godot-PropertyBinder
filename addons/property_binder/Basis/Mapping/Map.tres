@@ -11,10 +11,17 @@ control_property = "button_pressed"
 control_signal = "toggled"
 metadata/_custom_type_script = "uid://cmkaar7ithfmc"
 
+[sub_resource type="Resource" id="Resource_uw6db"]
+script = ExtResource("2_fcws4")
+control_type = "CheckButton"
+control_property = "button_pressed"
+control_signal = "toggled"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
 [sub_resource type="Resource" id="Resource_6og10"]
 script = ExtResource("1_6og10")
 property_type = 1
-control_map = Array[ExtResource("2_fcws4")]([SubResource("Resource_tru04")])
+control_map = Array[ExtResource("2_fcws4")]([SubResource("Resource_tru04"), SubResource("Resource_uw6db")])
 metadata/_custom_type_script = "uid://dop8bj8wnxr6q"
 
 [sub_resource type="Resource" id="Resource_m2tlt"]
@@ -24,15 +31,93 @@ control_property = "value"
 control_signal = "value_changed"
 metadata/_custom_type_script = "uid://cmkaar7ithfmc"
 
+[sub_resource type="Resource" id="Resource_25euh"]
+script = ExtResource("2_fcws4")
+control_type = "LineEdit"
+control_property = "text"
+control_signal = "text_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_qpe1t"]
+script = ExtResource("2_fcws4")
+control_type = "ProgressBar"
+control_property = "value"
+control_signal = "value_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_j5cnv"]
+script = ExtResource("2_fcws4")
+control_type = "Label"
+control_property = "text"
+control_signal = "NONE"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_d62u8"]
+script = ExtResource("2_fcws4")
+control_type = "HSlider"
+control_property = "value"
+control_signal = "value_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_gtp7p"]
+script = ExtResource("2_fcws4")
+control_type = "VSlider"
+control_property = "value"
+control_signal = "value_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
 [sub_resource type="Resource" id="Resource_8rqsq"]
 script = ExtResource("1_6og10")
 property_type = 2
-control_map = Array[ExtResource("2_fcws4")]([SubResource("Resource_m2tlt")])
+control_map = Array[ExtResource("2_fcws4")]([SubResource("Resource_m2tlt"), SubResource("Resource_25euh"), SubResource("Resource_qpe1t"), SubResource("Resource_j5cnv"), SubResource("Resource_d62u8"), SubResource("Resource_gtp7p")])
 metadata/_custom_type_script = "uid://dop8bj8wnxr6q"
+
+[sub_resource type="Resource" id="Resource_6k044"]
+script = ExtResource("2_fcws4")
+control_type = "SpinBox"
+control_property = "value"
+control_signal = "value_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_fvhyl"]
+script = ExtResource("2_fcws4")
+control_type = "ProgressBar"
+control_property = "value"
+control_signal = "value_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_fkwpn"]
+script = ExtResource("2_fcws4")
+control_type = "LineEdit"
+control_property = "text"
+control_signal = "text_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_81740"]
+script = ExtResource("2_fcws4")
+control_type = "Label"
+control_property = "text"
+control_signal = "NONE"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_8gach"]
+script = ExtResource("2_fcws4")
+control_type = "HSlider"
+control_property = "value"
+control_signal = "value_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_q7jmv"]
+script = ExtResource("2_fcws4")
+control_type = "VSlider"
+control_property = "value"
+control_signal = "value_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
 
 [sub_resource type="Resource" id="Resource_fcws4"]
 script = ExtResource("1_6og10")
 property_type = 3
+control_map = Array[ExtResource("2_fcws4")]([SubResource("Resource_6k044"), SubResource("Resource_fvhyl"), SubResource("Resource_fkwpn"), SubResource("Resource_81740"), SubResource("Resource_8gach"), SubResource("Resource_q7jmv")])
 metadata/_custom_type_script = "uid://dop8bj8wnxr6q"
 
 [sub_resource type="Resource" id="Resource_a5uex"]
@@ -42,13 +127,54 @@ control_property = "text"
 control_signal = "text_changed"
 metadata/_custom_type_script = "uid://cmkaar7ithfmc"
 
+[sub_resource type="Resource" id="Resource_v2n6y"]
+script = ExtResource("2_fcws4")
+control_type = "Label"
+control_property = "text"
+control_signal = "NONE"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_5omaf"]
+script = ExtResource("2_fcws4")
+control_type = "TextEdit"
+control_property = "text"
+control_signal = "text_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_7fjsh"]
+script = ExtResource("2_fcws4")
+control_type = "Button"
+control_property = "text"
+control_signal = "NONE"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
 [sub_resource type="Resource" id="Resource_nl4sr"]
 script = ExtResource("1_6og10")
 property_type = 4
-control_map = Array[ExtResource("2_fcws4")]([SubResource("Resource_a5uex")])
+control_map = Array[ExtResource("2_fcws4")]([SubResource("Resource_a5uex"), SubResource("Resource_v2n6y"), SubResource("Resource_5omaf"), SubResource("Resource_7fjsh")])
+metadata/_custom_type_script = "uid://dop8bj8wnxr6q"
+
+[sub_resource type="Resource" id="Resource_3fbhq"]
+script = ExtResource("2_fcws4")
+control_type = "ColorRect"
+control_property = "color"
+control_signal = "NONE"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_ugwe3"]
+script = ExtResource("2_fcws4")
+control_type = "ColorPicker"
+control_property = "color"
+control_signal = "color_changed"
+metadata/_custom_type_script = "uid://cmkaar7ithfmc"
+
+[sub_resource type="Resource" id="Resource_olnhx"]
+script = ExtResource("1_6og10")
+property_type = 20
+control_map = Array[ExtResource("2_fcws4")]([SubResource("Resource_3fbhq"), SubResource("Resource_ugwe3")])
 metadata/_custom_type_script = "uid://dop8bj8wnxr6q"
 
 [resource]
 script = ExtResource("2_8rqsq")
-map = Array[ExtResource("1_6og10")]([SubResource("Resource_6og10"), SubResource("Resource_8rqsq"), SubResource("Resource_fcws4"), SubResource("Resource_nl4sr")])
+map = Array[ExtResource("1_6og10")]([SubResource("Resource_6og10"), SubResource("Resource_8rqsq"), SubResource("Resource_fcws4"), SubResource("Resource_nl4sr"), SubResource("Resource_olnhx")])
 metadata/_custom_type_script = "uid://dpwfmceccpwv6"

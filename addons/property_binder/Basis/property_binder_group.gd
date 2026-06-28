@@ -30,10 +30,15 @@ func assign_obj(obj: RefCounted):
 		for pb in bindings:
 			pb.assign_obj(obj)
 	else:
-		printerr("Can't assign a null Object to PropertyBinderGroup.")
+		push_error("Can't assign a null Object to PropertyBinderGroup.")
 
-func add_binding(ctrl: Node, property: String):
-	var pb: PropertyBinder = PropertyBinder.new(ctrl, property)
+## Add a new PropertyBinder to the PropertyBinderGroup.[br]
+## [b]control[/b]: The Control Node to bind the property to.[br]
+## [b]object_property_name[/b]: The property of the object that will be bound to the Control.[br]
+## [b]control_property_overwrite[/b]: If left blank, the standard mapping will be used if available. Overwrite to bind to a different Control property.[br]
+## [b]control_signal_overwrite[/b]: If left blank, the standard mapping will be used if available. Overwrite to connect a different signal. Set to "NONE" to ignore signal binding.
+func add_binding(ctrl: Node, property: String, ctrl_property_overwrite: String = "", signal_overwrite: String = ""):
+	var pb: PropertyBinder = PropertyBinder.new(ctrl, property, ctrl_property_overwrite, signal_overwrite)
 	if _obj_ref != null:
 		var obj = _obj_ref.get_ref()
 		if not _obj_is_null(obj, property):
@@ -45,27 +50,29 @@ func add_binding(ctrl: Node, property: String):
 func refresh_ui():
 	if not _obj: return
 	for pb in bindings:
-		pb._refresh_ui()
+		if not pb._obj:
+			pb.assign_obj(_obj)
+		else:
+			pb._refresh_ui()
 
 func _obj_is_null(obj: Object, property: String) -> bool:
 	if obj == null:
-		printerr("Can't bind property '" + property + "' on null Object")
+		push_error("Can't bind property '" + property + "' on null Object")
 		return true
 	return false
 
 func reverse():
 	for b in bindings:
 		b.reverse_changes()
-	var obj = _obj_ref.get_ref()
-	if obj:
-		obj.notify_property_list_changed()
+	if _obj:
+		_obj.notify_property_list_changed()
 
 func _obj_has_property(obj: Object, property: String) -> bool:
 	var pl = obj.get_property_list()
 	for p in pl:
 		if p["name"] == property:
 			return true
-	printerr("Property '" + property + "' can't be found on Object.")
+	push_error("Property %s can't be found on Object." % property)
 	return false
 
 func _on_dirty_changed(new_dirty: bool):

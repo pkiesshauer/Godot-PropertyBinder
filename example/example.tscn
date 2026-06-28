@@ -1,0 +1,222 @@
+[gd_scene format=3 uid="uid://cf233oycphua6"]
+
+[ext_resource type="Script" uid="uid://l2f4m4rnagcj" path="res://example/example.gd" id="1_7d4yv"]
+[ext_resource type="Script" uid="uid://xstwlscfyqhj" path="res://addons/property_binder/Basis/property_binder_group_node.gd" id="2_f38fh"]
+[ext_resource type="Script" uid="uid://cit1vygc0syc" path="res://addons/property_binder/Basis/property_binder_node.gd" id="3_2ryc3"]
+[ext_resource type="Texture2D" uid="uid://cuyyy4xxwg6yl" path="res://icon.svg" id="4_57aw1"]
+[ext_resource type="Script" uid="uid://dqf4f10xj4tcb" path="res://example/example_sprite.gd" id="5_5ng50"]
+
+[node name="Control" type="Control" unique_id=1596121053 node_paths=PackedStringArray("check_1", "line_edit_1", "spin_box_1", "progress_bar_1", "h_slider_1", "check_2", "line_edit_2", "spin_box_2", "progress_bar_2", "h_slider_2", "property_binder_group_node")]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_7d4yv")
+check_1 = NodePath("VBoxContainer2/HBoxContainer/setup1/VBoxContainer/check1")
+line_edit_1 = NodePath("VBoxContainer2/HBoxContainer/setup1/VBoxContainer/LineEdit1")
+spin_box_1 = NodePath("VBoxContainer2/HBoxContainer/setup1/VBoxContainer/SpinBox1")
+progress_bar_1 = NodePath("VBoxContainer2/HBoxContainer/setup1/VBoxContainer/ProgressBar1")
+h_slider_1 = NodePath("VBoxContainer2/HBoxContainer/setup1/VBoxContainer/HSlider1")
+check_2 = NodePath("VBoxContainer2/HBoxContainer/setup2/VBoxContainer/check2")
+line_edit_2 = NodePath("VBoxContainer2/HBoxContainer/setup2/VBoxContainer/LineEdit2")
+spin_box_2 = NodePath("VBoxContainer2/HBoxContainer/setup2/VBoxContainer/SpinBox2")
+progress_bar_2 = NodePath("VBoxContainer2/HBoxContainer/setup2/VBoxContainer/ProgressBar2")
+h_slider_2 = NodePath("VBoxContainer2/HBoxContainer/setup2/VBoxContainer/HSlider2")
+property_binder_group_node = NodePath("VBoxContainer2/HBoxContainer/setup3/PropertyBinderGroupNode")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=267934865]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1189.0
+offset_bottom = 797.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2" unique_id=302224453]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="setup1" type="HBoxContainer" parent="VBoxContainer2/HBoxContainer" unique_id=2076574043]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/HBoxContainer/setup1" unique_id=2127465952]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer2/HBoxContainer/setup1/VBoxContainer" unique_id=2067329005]
+layout_mode = 2
+text = "setup1"
+
+[node name="check1" type="CheckBox" parent="VBoxContainer2/HBoxContainer/setup1/VBoxContainer" unique_id=120802435]
+layout_mode = 2
+text = "check1"
+
+[node name="LineEdit1" type="LineEdit" parent="VBoxContainer2/HBoxContainer/setup1/VBoxContainer" unique_id=788725030]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="SpinBox1" type="SpinBox" parent="VBoxContainer2/HBoxContainer/setup1/VBoxContainer" unique_id=1843920844]
+layout_mode = 2
+
+[node name="ProgressBar1" type="ProgressBar" parent="VBoxContainer2/HBoxContainer/setup1/VBoxContainer" unique_id=13637002]
+layout_mode = 2
+
+[node name="HSlider1" type="HSlider" parent="VBoxContainer2/HBoxContainer/setup1/VBoxContainer" unique_id=1389727571]
+layout_mode = 2
+
+[node name="setup2" type="HBoxContainer" parent="VBoxContainer2/HBoxContainer" unique_id=783155969]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/HBoxContainer/setup2" unique_id=1167726728]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer2/HBoxContainer/setup2/VBoxContainer" unique_id=1272303393]
+layout_mode = 2
+text = "setup2"
+
+[node name="check2" type="CheckBox" parent="VBoxContainer2/HBoxContainer/setup2/VBoxContainer" unique_id=780274138]
+layout_mode = 2
+text = "check2"
+
+[node name="LineEdit2" type="LineEdit" parent="VBoxContainer2/HBoxContainer/setup2/VBoxContainer" unique_id=283084639]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="SpinBox2" type="SpinBox" parent="VBoxContainer2/HBoxContainer/setup2/VBoxContainer" unique_id=1299628950]
+layout_mode = 2
+
+[node name="ProgressBar2" type="ProgressBar" parent="VBoxContainer2/HBoxContainer/setup2/VBoxContainer" unique_id=1298189652]
+layout_mode = 2
+
+[node name="HSlider2" type="HSlider" parent="VBoxContainer2/HBoxContainer/setup2/VBoxContainer" unique_id=1657528944]
+layout_mode = 2
+
+[node name="setup3" type="HBoxContainer" parent="VBoxContainer2/HBoxContainer" unique_id=1469104664]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/HBoxContainer/setup3" unique_id=1758339048]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer2/HBoxContainer/setup3/VBoxContainer" unique_id=1241679072]
+layout_mode = 2
+text = "setup3"
+
+[node name="check3" type="CheckBox" parent="VBoxContainer2/HBoxContainer/setup3/VBoxContainer" unique_id=1670966891]
+layout_mode = 2
+text = "check3"
+
+[node name="LineEdit3" type="LineEdit" parent="VBoxContainer2/HBoxContainer/setup3/VBoxContainer" unique_id=782593374]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="SpinBox3" type="SpinBox" parent="VBoxContainer2/HBoxContainer/setup3/VBoxContainer" unique_id=1712228629]
+layout_mode = 2
+
+[node name="ProgressBar3" type="ProgressBar" parent="VBoxContainer2/HBoxContainer/setup3/VBoxContainer" unique_id=619422758]
+layout_mode = 2
+
+[node name="HSlider3" type="HSlider" parent="VBoxContainer2/HBoxContainer/setup3/VBoxContainer" unique_id=1026800589]
+layout_mode = 2
+
+[node name="PropertyBinderGroupNode" type="Node" parent="VBoxContainer2/HBoxContainer/setup3" unique_id=2040415407]
+script = ExtResource("2_f38fh")
+metadata/_custom_type_script = "uid://xstwlscfyqhj"
+
+[node name="PropertyBinderNode" type="Node" parent="VBoxContainer2/HBoxContainer/setup3/PropertyBinderGroupNode" unique_id=2096946381 node_paths=PackedStringArray("control")]
+script = ExtResource("3_2ryc3")
+control = NodePath("../../VBoxContainer/check3")
+object_property_name = "check"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="PropertyBinderNode3" type="Node" parent="VBoxContainer2/HBoxContainer/setup3/PropertyBinderGroupNode" unique_id=1626234183 node_paths=PackedStringArray("control")]
+script = ExtResource("3_2ryc3")
+control = NodePath("../../VBoxContainer/LineEdit3")
+object_property_name = "text"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="PropertyBinderNode4" type="Node" parent="VBoxContainer2/HBoxContainer/setup3/PropertyBinderGroupNode" unique_id=483587263 node_paths=PackedStringArray("control")]
+script = ExtResource("3_2ryc3")
+control = NodePath("../../VBoxContainer/SpinBox3")
+object_property_name = "integer"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="PropertyBinderNode5" type="Node" parent="VBoxContainer2/HBoxContainer/setup3/PropertyBinderGroupNode" unique_id=1473680137 node_paths=PackedStringArray("control")]
+script = ExtResource("3_2ryc3")
+control = NodePath("../../VBoxContainer/ProgressBar3")
+object_property_name = "number"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="PropertyBinderNode6" type="Node" parent="VBoxContainer2/HBoxContainer/setup3/PropertyBinderGroupNode" unique_id=139307057 node_paths=PackedStringArray("control")]
+script = ExtResource("3_2ryc3")
+control = NodePath("../../VBoxContainer/HSlider3")
+object_property_name = "number"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="setup4" type="HBoxContainer" parent="VBoxContainer2/HBoxContainer" unique_id=401862697]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2/HBoxContainer/setup4" unique_id=190832952]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer2/HBoxContainer/setup4/VBoxContainer" unique_id=787031953]
+layout_mode = 2
+text = "setup4"
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer2/HBoxContainer/setup4/VBoxContainer" unique_id=1705302259]
+layout_mode = 2
+max_value = 2000.0
+
+[node name="ColorPicker" type="ColorPicker" parent="VBoxContainer2/HBoxContainer/setup4/VBoxContainer" unique_id=926033874]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer2/HBoxContainer/setup4" unique_id=805806021]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="TextEdit" type="TextEdit" parent="VBoxContainer2/HBoxContainer/setup4/VBoxContainer2" unique_id=2110455162]
+custom_minimum_size = Vector2(300, 500)
+layout_mode = 2
+text = "Setup4 is wired up entirely inside the editor and does not require additional code to work.
+The code in "
+wrap_mode = 1
+
+[node name="PropertyBinderGroupNode" type="Node" parent="VBoxContainer2/HBoxContainer/setup4" unique_id=17375134 node_paths=PackedStringArray("target")]
+script = ExtResource("2_f38fh")
+target = NodePath("../../../../Sprite2D")
+process_ui = true
+metadata/_custom_type_script = "uid://xstwlscfyqhj"
+
+[node name="PropertyBinderNode" type="Node" parent="VBoxContainer2/HBoxContainer/setup4/PropertyBinderGroupNode" unique_id=2119941998 node_paths=PackedStringArray("control")]
+script = ExtResource("3_2ryc3")
+control = NodePath("../../VBoxContainer/SpinBox")
+object_property_name = "posx"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="PropertyBinderNode2" type="Node" parent="VBoxContainer2/HBoxContainer/setup4/PropertyBinderGroupNode" unique_id=1586759241 node_paths=PackedStringArray("control")]
+script = ExtResource("3_2ryc3")
+control = NodePath("../../VBoxContainer/ColorPicker")
+object_property_name = "modulate"
+metadata/_custom_type_script = "uid://cit1vygc0syc"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer2" unique_id=1421186247]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer2/HBoxContainer2" unique_id=838864255]
+layout_mode = 2
+text = "assign TestData1"
+
+[node name="Button2" type="Button" parent="VBoxContainer2/HBoxContainer2" unique_id=1090875767]
+layout_mode = 2
+text = "assign TestData2"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=949571145]
+position = Vector2(65, 704)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_57aw1")
+script = ExtResource("5_5ng50")
+
+[node name="Label" type="Label" parent="Sprite2D" unique_id=1133936911]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="pressed" from="VBoxContainer2/HBoxContainer2/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer2/HBoxContainer2/Button2" to="." method="_on_button_2_pressed"]
